@@ -19,3 +19,7 @@ body {
 	font-family: var(--font-family-base);
 	background-color: var(--color-body-bg);
 }
+
+#root {
+	@apply flex flex-col min-h-screen;
+}

@@ -3,7 +3,7 @@ import { Menu, X } from 'lucide-react'
 import logo from '../assets/logo.svg'
 import { Link } from '../components/shared/Link'
 
-const navItems = [
+export const navItems = [
 	{ label: 'Home', href: '#' },
 	{ label: 'About', href: '#about' },
 	{ label: 'Services', href: '#services' },
