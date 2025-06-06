@@ -5,7 +5,7 @@ export const Hero = () => {
 	return (
 		<section className="bg-orange-200 p-8 rounded-3xl flex flex-col gap-6 items-center justify-between lg:flex-row">
 			<div className="space-y-4 text-center">
-				<h1 className="text-2xl lg:text-3xl text-primary font-semibold">Support for your mental Health</h1>
+				<h1 className="text-3xl lg:text-4xl text-primary font-semibold">Support for your mental Health</h1>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus perferendis quibusdam necessitatibus
 					blanditiis numquam maiores in ut commodi, saepe asperiores tenetur debitis possimus consequatur aliquid

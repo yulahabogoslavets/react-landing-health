@@ -4,10 +4,11 @@ import logo from '../assets/logo.svg'
 import { Link } from '../components/shared/Link'
 
 const navItems = [
-	{ label: 'Home', href: '/' },
-	{ label: 'About', href: '/about' },
-	{ label: 'Services', href: '/services' },
-	{ label: 'Contact', href: '/contact' },
+	{ label: 'Home', href: '#' },
+	{ label: 'About', href: '#about' },
+	{ label: 'Services', href: '#services' },
+	{ label: 'FAQ', href: '#question' },
+	{ label: 'Contact', href: '#contact' },
 ]
 
 export default function Navbar() {
