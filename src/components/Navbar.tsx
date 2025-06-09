@@ -7,6 +7,7 @@ export const navItems = [
 	{ label: 'Home', href: '#' },
 	{ label: 'About', href: '#about' },
 	{ label: 'Services', href: '#services' },
+	{ label: 'Testimonials', href: '#feedback' },
 	{ label: 'FAQ', href: '#question' },
 	{ label: 'Contact', href: '#contact' },
 ]

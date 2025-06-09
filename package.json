@@ -11,6 +11,7 @@
 		"format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css}\""
 	},
 	"dependencies": {
+		"@splidejs/react-splide": "^0.7.12",
 		"@tailwindcss/vite": "^4.1.8",
 		"lucide-react": "^0.513.0",
 		"react": "^19.1.0",

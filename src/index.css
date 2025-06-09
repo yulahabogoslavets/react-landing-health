@@ -23,3 +23,7 @@ body {
 #root {
 	@apply flex flex-col min-h-screen;
 }
+
+.splide__track {
+	@apply pb-4 md:!pr-16;
+}
