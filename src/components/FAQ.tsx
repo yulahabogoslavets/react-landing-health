@@ -7,7 +7,7 @@ export const FAQ = () => {
 		<section id="question" className="flex flex-col lg:flex-row gap-4 items-center">
 			<Headline
 				label="Need Help!"
-				title="Frequently Asked Questions"
+				title="Frequently asked questions"
 				text="Find answers to common questions about services, therapy, and mental well-being"
 			/>
 

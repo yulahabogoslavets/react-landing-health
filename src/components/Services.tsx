@@ -28,7 +28,7 @@ export const Services = () => {
 		<section id="services" className="flex flex-col gap-4 items-center">
 			<Headline
 				label="services"
-				title="Your Path to Well-being"
+				title="Your path to well-being"
 				text="Discover expert guidance for a healthier mind and balanced life."
 			/>
 
