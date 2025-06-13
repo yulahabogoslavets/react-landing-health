@@ -1,6 +1,7 @@
 {
 	"name": "react-landing-health",
-	"private": true,
+	"private": false,
+	"homepage": "https://yulahabogoslavets.github.io/react-landing-health/",
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
@@ -8,11 +9,14 @@
 		"build": "tsc -b && vite build",
 		"lint": "eslint .",
 		"preview": "vite preview",
-		"format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css}\""
+		"format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css}\"",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d dist"
 	},
 	"dependencies": {
 		"@splidejs/react-splide": "^0.7.12",
 		"@tailwindcss/vite": "^4.1.8",
+		"gh-pages": "^6.3.0",
 		"lucide-react": "^0.513.0",
 		"react": "^19.1.0",
 		"react-dom": "^19.1.0",
