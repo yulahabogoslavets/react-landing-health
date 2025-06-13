@@ -7,7 +7,7 @@ import type { Splide as SplideInstance } from '@splidejs/splide'
 import { ChevronRight, ChevronLeft } from 'lucide-react'
 
 export const Testimonials = () => {
-	const [currentSlide, setCurrentSlide] = useState(0)
+	const [, setCurrentSlide] = useState(0)
 	const splideRef = useRef<SplideInstance | null>(null)
 	const bgClasses = ['bg-red-100', 'bg-blue-100', 'bg-green-100', 'bg-yellow-100']
 
@@ -73,7 +73,7 @@ export const Testimonials = () => {
 					onMounted={(splide: SplideInstance) => {
 						splideRef.current = splide
 					}}
-					onMoved={(splide, newIndex) => setCurrentSlide(newIndex)}
+					onMoved={(_splide: SplideInstance, newIndex: number) => setCurrentSlide(newIndex)}
 					aria-label="Testimonials"
 					aria-roledescription="carousel"
 				>
