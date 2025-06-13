@@ -16,7 +16,9 @@ export const Footer = () => {
 			<div className="flex flex-col justify-between items-center md:flex-row gap-4 w-full">
 				<ul className="flex flex-col md:flex-row gap-4 ">
 					{navItems.map((item, index) => (
-						<Link text={item.label} href={item.href} key={index} />
+						<li key={index}>
+							<Link text={item.label} href={item.href} key={index} />
+						</li>
 					))}
 				</ul>
 				<ul className="flex gap-4 ">

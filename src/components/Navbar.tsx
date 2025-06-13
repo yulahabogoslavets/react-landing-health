@@ -31,12 +31,18 @@ export default function Navbar() {
 						</div>
 						<ul className="hidden lg:flex ml-auto gap-4">
 							{navItems.map((item, index) => (
-								<Link text={item.label} href={item.href} key={index} />
+								<li key={index}>
+									<Link text={item.label} href={item.href} key={index} />
+								</li>
 							))}
 						</ul>
 
 						<div className="lg:hidden md:flex flex-col justify-end">
-							<button onClick={toggleMobileMenu} className="hover:cursor-pointer focus:cursor-pointer">
+							<button
+								onClick={toggleMobileMenu}
+								className="hover:cursor-pointer focus:cursor-pointer"
+								aria-label={`${mobileMenuOpen ? 'Menu close' : 'Menu open'}`}
+							>
 								{mobileMenuOpen ? <X /> : <Menu />}
 							</button>
 						</div>
