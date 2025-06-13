@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import logo from '../assets/logo.svg'
 import { Link } from '../components/shared/Link'
+import { DarkModeToggle } from './shared/DarkModeToggle'
 
 export const navItems = [
 	{ label: 'Home', href: '#' },
@@ -20,8 +21,8 @@ export default function Navbar() {
 	}
 
 	return (
-		<header>
-			<nav className="sticky top-0 z-50 py-3 backdrop-blur-lg shadow-lg bg-neutral-100">
+		<header className="sticky top-0 z-50 p-4 backdrop-blur-lg shadow-lg bg-neutral-100 grid grid-cols-[1fr_auto] gap-4">
+			<nav>
 				<div className="container px-4 mx-auto relative lg:text-sm">
 					<div className="flex items-center justify-between">
 						<div className="flex items-center">
@@ -42,7 +43,11 @@ export default function Navbar() {
 					</div>
 
 					{mobileMenuOpen && (
-						<div className="fixed right-0 z-20 bg-neutral-200 w-full px-12 py-6 flex flex-col justify-center items-center lg:hidden">
+						<div
+							className="fixed right-0 z-20 bg-neutral-200 w-full px-12 py-6 flex flex-col justify-center items-center lg:hidden
+						dark:bg-black"
+							data-block="mobile-menu"
+						>
 							<ul>
 								{navItems.map((item, index) => (
 									<li key={index}>
@@ -54,6 +59,7 @@ export default function Navbar() {
 					)}
 				</div>
 			</nav>
+			<DarkModeToggle />
 		</header>
 	)
 }

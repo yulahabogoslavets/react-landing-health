@@ -27,11 +27,12 @@ export const Accordion = ({ title, text }: AccordionProps) => {
 	return (
 		<div
 			className={`
-				py-2 transition-all rounded-xl border bg-white group
+				py-2 transition-all rounded-xl border bg-white group dark:bg-black
 				${isOpen ? 'border-primary ring-2 ring-primary' : 'border-gray-200'}
 				focus-within:ring-2 focus-within:ring-primary
 				hover:border-primary hover:shadow-sm
 			`}
+			data-block="acccordion"
 		>
 			<h3>
 				<button

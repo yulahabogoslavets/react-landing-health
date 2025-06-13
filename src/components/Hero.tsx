@@ -3,7 +3,11 @@ import heroImg from '../assets/fruits.jpg'
 
 export const Hero = () => {
 	return (
-		<section className="bg-orange-200 p-8 rounded-3xl flex flex-col gap-6 items-center justify-between lg:flex-row">
+		<section
+			id="hero"
+			className="bg-gradient-to-r from-yellow-300 to-orange-400 p-8 rounded-3xl flex flex-col gap-6 items-center justify-between lg:flex-row 
+			border border-white dark:border-white dark:bg-black dark:bg-none"
+		>
 			<div className="space-y-4 text-center">
 				<h1 className="text-3xl lg:text-4xl text-primary font-semibold">Support for your mental Health</h1>
 				<p>

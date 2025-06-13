@@ -67,6 +67,7 @@ export const Services = () => {
 				id={`service-panel-${activeTab}`}
 				role="tabpanel"
 				aria-labelledby={`service-tab-${activeTab}`}
+				data-block="service-panel"
 			>
 				<h3 className="text-xl font-semibold mb-2">{services[activeTab].title}</h3>
 				<p className="text-gray-700">{services[activeTab].description}</p>

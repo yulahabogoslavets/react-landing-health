@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
 
 @font-face {
 	font-family: Bricolage;
@@ -26,4 +27,27 @@ body {
 
 .splide__track {
 	@apply pb-4 md:!pr-16;
+}
+
+.dark {
+	--color-primary: #028495;
+}
+
+.dark body,
+.dark header,
+.dark footer,
+.dark form {
+	@apply bg-neutral-900 transition-colors duration-300 text-gray-100;
+}
+
+.dark header {
+	@apply border-b border-neutral-700;
+}
+
+.dark #hero,
+.dark [data-block] {
+	@apply dark:bg-black dark:bg-none;
+	p {
+		@apply text-gray-100;
+	}
 }

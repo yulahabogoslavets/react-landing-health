@@ -11,7 +11,10 @@ export const About = () => {
 			/>
 
 			<div className="flex justify-between items-stretch flex-col md:flex-row gap-4 ">
-				<div className="bg-linear-to-r from-white to-orange-200 shadow-lg rounded-lg p-6 flex flex-col justify-between gap-4 w-full md:w-1/2 flex-1">
+				<div
+					className="bg-linear-to-r from-white to-orange-200 shadow-lg rounded-lg p-6 flex flex-col justify-between gap-4 w-full md:w-1/2 flex-1"
+					data-block="browse"
+				>
 					<h3 className="text-2xl font-semibold">Browse Therapists</h3>
 					<p className="text-gray-700">
 						Explore our directory of licensed therapists and mental health professionals. Filter by specialty, location,
@@ -19,7 +22,10 @@ export const About = () => {
 					</p>
 					<Button text="Learn more" className="bg-white border-primary" classNameSpan="!text-black" />
 				</div>
-				<div className="bg-linear-65 from-white to-orange-200 shadow-lg rounded-lg p-6 flex flex-col justify-between gap-4 w-full md:w-1/2 flex-1">
+				<div
+					className="bg-linear-65 from-white to-orange-200 shadow-lg rounded-lg p-6 flex flex-col justify-between gap-4 w-full md:w-1/2 flex-1"
+					data-block="find"
+				>
 					<h3 className="text-2xl font-semibold mb-2">Lorem Ipsum</h3>
 					<p className="text-gray-700">
 						Explore our directory of licensed therapists and mental health professionals. Filter by specialty, location,

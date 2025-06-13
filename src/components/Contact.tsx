@@ -10,7 +10,11 @@ export const Contact = () => {
 				text="Whether you have questions, need help getting started, or want to learn more — reach out anytime."
 			/>
 
-			<div className="w-full flex justify-between md:items-stretch flex-col md:flex-row gap-4 bg-white p-6 rounded-lg shadow-lg">
+			<div
+				className="w-full flex justify-between md:items-stretch flex-col md:flex-row gap-4 bg-white p-6 rounded-lg shadow-lg 
+				border border-white dark:bg-neutral-800 dark:border-neutral-700"
+				data-block="contact"
+			>
 				<div className="flex flex-col  items-center gap-4 w-full md:w-1/2 ">
 					<h3 className="text-2xl font-semibold text-primary">Contact Details:</h3>
 					<address className="not-italic">

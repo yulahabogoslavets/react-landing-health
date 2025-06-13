@@ -7,20 +7,23 @@ import { Testimonials } from './components/Testimonials'
 import { Services } from './components/Services'
 import { About } from './components/About'
 import { Contact } from './components/Contact'
+import { ThemeProvider } from './context/ThemeContext'
 
 function App() {
 	return (
 		<>
-			<Navbar />
-			<main className="container mx-auto px-4 py-8 flex flex-col gap-20">
-				<Hero />
-				<About />
-				<Services />
-				<Testimonials />
-				<FAQ />
-				<Contact />
-			</main>
-			<Footer />
+			<ThemeProvider>
+				<Navbar />
+				<main className="container mx-auto px-4 py-8 flex flex-col gap-20">
+					<Hero />
+					<About />
+					<Services />
+					<Testimonials />
+					<FAQ />
+					<Contact />
+				</main>
+				<Footer />
+			</ThemeProvider>
 		</>
 	)
 }

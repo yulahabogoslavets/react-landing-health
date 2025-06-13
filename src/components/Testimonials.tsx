@@ -26,19 +26,21 @@ export const Testimonials = () => {
 				<div className="flex gap-4 mt-6 ml-auto">
 					<button
 						onClick={() => splideRef.current?.go('<')}
-						className="p-2 bg-gray-200 rounded-full transition duration-300 cursor-pointer active:bg-primary hover:bg-primary focus:bg-primary group"
+						className="p-2 bg-gray-200 dark:bg-black rounded-full transition duration-300 cursor-pointer active:bg-primary hover:bg-primary focus:bg-primary group dark:hover:bg-neutral-800"
 						aria-label="Previous testimonial"
 						title="Previous testimonial"
 						disabled={testimonials.length <= 2}
+						data-block="prev"
 					>
 						<ChevronLeft aria-hidden="true" className="group-hover:text-white" />
 					</button>
 					<button
 						onClick={() => splideRef.current?.go('>')}
-						className="p-2 bg-gray-200 rounded-full transition duration-300 cursor-pointer active:bg-primary hover:bg-primary focus:bg-primary group"
+						className="p-2 bg-gray-200 dark:bg-black rounded-full transition duration-300 cursor-pointer active:bg-primary hover:bg-primary focus:bg-primary group dark:hover:bg-neutral-800"
 						aria-label="Next testimonial"
 						title="Next testimonial"
 						disabled={testimonials.length <= 2}
+						data-block="next"
 					>
 						<ChevronRight
 							aria-hidden="true"

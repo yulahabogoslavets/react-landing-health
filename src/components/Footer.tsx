@@ -12,7 +12,7 @@ export const Footer = () => {
 	}, [])
 
 	return (
-		<footer className="container mx-auto px-4 py-8 flex flex-col items-center gap-4 mt-auto bg-white rounded-3xl">
+		<footer className="container mx-auto px-4 py-8 flex flex-col items-center gap-4 mt-auto bg-white rounded-3xl border border-white dark:bg-neutral-800 dark:text-white dark:border dark:border-white">
 			<div className="flex flex-col justify-between items-center md:flex-row gap-4 w-full">
 				<ul className="flex flex-col md:flex-row gap-4 ">
 					{navItems.map((item, index) => (
